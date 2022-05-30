@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/oscLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/oscName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/OscName"
+        android:textColor="@color/btn_color_off"
+        android:textSize="12pt"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sinForm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <ToggleButton
+
+        android:id="@+id/btn_sinForm"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:background="@drawable/toggle_sinus_selector"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintTop_toBottomOf="@id/oscName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_triangleForm"
+        android:layout_margin="40dp"
+        >
+    </ToggleButton>
+
+    <ToggleButton
+        android:id="@+id/btn_triangleForm"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:background="@drawable/toggle_triangle_selector"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintTop_toBottomOf="@id/btn_sinForm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_quadForm"
+        android:layout_margin="40dp">
+    </ToggleButton>
+
+    <ToggleButton
+        android:id="@+id/btn_quadForm"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_margin="40dp"
+        android:background="@drawable/toggle_quad_selector"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_triangleForm"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </ToggleButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
